@@ -1,0 +1,19 @@
+nginx:
+  container_name: nginx.boilerplate
+  image: nginx
+  ports:
+    - 80:80
+    - 443:443
+  volumes:
+    - ./configs:/etc/nginx:ro
+    - ./www:/var/www/nginx.boilerplate:ro
+  links:
+    - php
+
+php:
+  container_name: php.nginx.boilerplate
+  image: php:fpm
+  expose:
+    - 9000
+  volumes:
+    - ./www-fpm/:/var/www/nginx.boilerplate/:ro
