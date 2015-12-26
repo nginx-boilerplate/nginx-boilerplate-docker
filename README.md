@@ -8,7 +8,8 @@ Preconfigured Nginx-boilerplated Docker image
  * `/etc/hosts` might need a change for local development (see `.hosts`) 
 
 ## Usage
- * Replace server and upstream configs with your own inside `docker-compose.yml`
  * `git submodule update --init`
+ * Modify `nginx-boilerplate/` contents according to your needs
+ * Modify `docker-compose.yml` as you see fit
  * `docker-compose up`
  * Open `http://nginx.boilerplate/` in browser
