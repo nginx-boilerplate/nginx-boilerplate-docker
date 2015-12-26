@@ -11,4 +11,4 @@ Preconfigured Nginx-boilerplated Docker image
  * Replace server and upstream configs with your own inside `docker-compose.yml`
  * `git submodule update --init`
  * `docker-compose up`
- * open `http://nginx.boilerplate/` in browser
+ * Open `http://nginx.boilerplate/` in browser
