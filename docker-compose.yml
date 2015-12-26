@@ -1,6 +1,6 @@
 nginx:
   container_name: nginx.boilerplate
-  image: nginx
+  image: umkus/nginx-boilerplate
   ports:
     - 80:80
     - 443:443
