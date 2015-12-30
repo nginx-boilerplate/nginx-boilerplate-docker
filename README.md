@@ -1,5 +1,7 @@
 #Nginx Boilerplate Docker image
 
+[![Join the chat at https://gitter.im/nginx-boilerplate/nginx-boilerplate-docker](https://badges.gitter.im/nginx-boilerplate/nginx-boilerplate-docker.svg)](https://gitter.im/nginx-boilerplate/nginx-boilerplate-docker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Preconfigured Nginx-boilerplated Docker image 
 
 ## Requirements
