@@ -5,6 +5,7 @@ nginx:
     - 80:80
     - 443:443
   volumes:
+    - ./logs/:/var/log/nginx/
     - ./nginx-boilerplate:/etc/nginx:ro
     - ./www:/var/www/nginx.boilerplate:ro
   links:
