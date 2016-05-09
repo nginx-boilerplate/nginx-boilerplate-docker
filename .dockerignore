@@ -1,4 +1,4 @@
-LICENSE
-README.md
 docker-compose.yml
+log
 .*
+*.md
