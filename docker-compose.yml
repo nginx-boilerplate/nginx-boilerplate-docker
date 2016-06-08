@@ -1,5 +1,8 @@
 nginx:
   container_name: nginx.boilerplate
+  hostname: nginx.boilerplate
+  extra_hosts:
+    - "www.nginx.boilerplate:127.0.0.1"
   build: .
   ports:
     - 80:80
@@ -14,7 +17,5 @@ nginx:
 php:
   container_name: php.nginx.boilerplate
   image: php:fpm
-  expose:
-    - 9000
   volumes:
     - ./www-fpm/:/var/www/nginx.boilerplate/:ro

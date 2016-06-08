@@ -1,4 +1,3 @@
-docker-compose.yml
-logs
-.*
-*.md
+!nginx-boilerplate
+!www
+nginx-boilerplate/certs/*
