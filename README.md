@@ -2,7 +2,7 @@
 
 [![Chat](https://img.shields.io/gitter/room/gitterHQ/gitter.svg)](https://gitter.im/nginx-boilerplate/nginx-boilerplate-docker)
 
-Preconfigured Nginx-boilerplated Docker image 
+Pre-configured Nginx-boilerplated Docker setup
 
 ## Requirements
  * [Docker toolbox](https://www.docker.com/docker-toolbox) (just [Docker Engine](https://www.docker.com/docker-engine) is sufficient for Linux) 
@@ -13,5 +13,6 @@ Preconfigured Nginx-boilerplated Docker image
  * `git submodule update --init`
  * Modify `nginx-boilerplate/` contents according to your needs
  * Modify `docker-compose.yml` as you see fit
- * `docker-compose up`
- * Open `http://nginx.boilerplate/` in browser
+ * Run `docker-compose up`
+ * Open `http://127.0.0.1` in browser
+ * Auto-reload nginx config for convenience `watch docker-compose exec nginx nginx -s reload`

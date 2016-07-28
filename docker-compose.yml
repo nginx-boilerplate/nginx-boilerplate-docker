@@ -1,21 +1,21 @@
-nginx:
-  container_name: nginx.boilerplate
-  hostname: nginx.boilerplate
-  extra_hosts:
-    - "www.nginx.boilerplate:127.0.0.1"
-  build: .
-  ports:
-    - 80:80
-    - 443:443
-  volumes:
-    - ./logs/:/var/log/nginx/
-    - ./nginx-boilerplate:/etc/nginx:ro
-    - ./www:/var/www/nginx.boilerplate:ro
-  links:
-    - php
-
-php:
-  container_name: php.nginx.boilerplate
-  image: php:fpm
-  volumes:
-    - ./www-fpm/:/var/www/nginx.boilerplate/:ro
+version: '2'
+services:
+    nginx:
+        container_name: nginx.boilerplate
+        hostname: nginx.boilerplate
+        image: nginx
+        ports:
+            - 80:80
+            - 443:443
+        volumes:
+            - ./logs/:/var/log/nginx/
+            - ./nginx-boilerplate:/etc/nginx:ro
+        volumes_from:
+            - php
+        links:
+            - php
+    php:
+        container_name: php.nginx.boilerplate # Equals to the upstream name in nginx
+        image: php:fpm
+        volumes:
+            - ./www:/var/www/nginx.boilerplate
