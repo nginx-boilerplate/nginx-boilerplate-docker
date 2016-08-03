@@ -3,7 +3,7 @@ services:
     nginx:
         container_name: nginx.boilerplate
         hostname: nginx.boilerplate
-        image: nginx
+        image: nginx #umkus/nginx-boilerplate
         ports:
             - 80:80
             - 443:443
