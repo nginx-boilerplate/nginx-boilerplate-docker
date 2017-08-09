@@ -1,4 +1,14 @@
-#Nginx Boilerplate Docker image
+# Deprecated
+
+Please see [nginx boilerplate](https://github.com/nginx-boilerplate/nginx-boilerplate) instead.
+
+
+
+
+
+
+
+# Nginx Boilerplate Docker image
 
 [![Chat](https://img.shields.io/gitter/room/gitterHQ/gitter.svg)](https://gitter.im/nginx-boilerplate/nginx-boilerplate-docker)
 
